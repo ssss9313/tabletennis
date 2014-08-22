@@ -1,0 +1,160 @@
+<html>
+<head>
+<section class="container_12">
+<title>愉悅桌球</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../css/css.css" rel="stylesheet">
+<link href="../css/960.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/buttons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/disable.css"/>
+<link rel="shortcut icon" href="../favicon.ico"> 
+<link rel="stylesheet" type="text/css" href="../css/demo2.css" />
+<link rel="stylesheet" type="text/css" href="../css/elastislide.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom2.css" />
+<script src="../js/modernizr.custom.17475.js"></script>
+
+<style type="text/css">   
+      body { padding: 50px 100px; }
+      #wrapper { text-align: center; } 
+
+      .container li{
+        font-size:13px;
+      }
+
+    </style>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">首頁</a></li>
+                        <li><a href="#">關於愉悅</a></li>
+                        <li><a href="#">會員中心</a></li>
+                        <li><a href="#">訂單查詢</a></li>
+                        <li><a href="#">購物車</a></li>
+                        <li><a href="#">註冊</a></li>
+                        <li><a href="#">登入</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                        <li class="search"><input type="text" name="w" id="what"><input type="submit" value="搜尋"></li>
+                    </ul>
+                </div>
+           
+            </div>
+        </nav>
+</head>
+
+<body>      
+
+<article>
+    <br>
+
+<div id="wrapper">  
+    <button disabled class="button green glossy">Stiga</button>
+    <a href="#" class="button">Butterfly</a>
+    <a href="#" class="button">Nittaku</a>
+    <a href="#" class="button">Xiom</a>
+    <a href="#" class="button">Crack</a>
+    <a href="#" class="button">Andro</a>
+    <a href="#" class="button">Yasaka</a>   
+    <a href="#" class="button">Tibhar</a>
+    <a href="#" class="button">紅雙喜</a>
+    <a href="#" class="button">友誼729</a>
+    <a href="#" class="button">Palio</a>
+    <a href="#" class="button">TSP</a>
+    
+  </div>   
+
+<aside class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <div class="list-group" align="center">
+                        <h2><img src="classify.jpg" width="210" height="35"></h2>
+                        <a href="stiga-blades.html" class="list-group-item">球板-blades</a>
+                        <a href="stiga-rubbers.html" class="list-group-item">膠皮-robbers</a>
+                        <a href="stiga-textiles" class="list-group-item">服裝-textiles</a>
+                        <a href="stiga-tables" class="list-group-item">桌子-tables</a>
+                        <a href="stiga-balls.html" class="list-group-item">球-balls</a>
+                        <a href="stiga-robots" class="list-group-item">發球機-robots</a>
+                        <a href="stiga-others" class="list-group-item">其它-others</a>
+                    </div>
+</aside>
+
+</div>
+<h4>熱門商品</h4>
+
+<div class="container11 demo-4" >
+            <div class="main11">
+
+                <div class="gallery11">
+                    <!-- Elastislide Carousel -->
+                    <ul id="carousel" class="elastislide-list">
+                        <li data-preview="images/large/4.jpg"><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+                        <li data-preview="images/large/5.jpg"><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+                        <li data-preview="images/large/6.jpg"><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+                        <li data-preview="images/large/7.jpg"><a href="#"><img src="images/small/7.jpg" alt="image07" /></a></li>
+                        <li data-preview="images/large/8.jpg"><a href="#"><img src="images/small/8.jpg" alt="image08" /></a></li>
+                        <li data-preview="images/large/9.jpg"><a href="#"><img src="images/small/9.jpg" alt="image09" /></a></li>
+                        <li data-preview="images/large/1.jpg"><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+                        <li data-preview="images/large/2.jpg"><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+                        <li data-preview="images/large/3.jpg"><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+                        <li data-preview="images/large/10.jpg"><a href="#"><img src="images/small/10.jpg" alt="image10" /></a></li>
+                    </ul>
+                    <!-- End Elastislide Carousel -->
+
+                    <div class="image-preview">
+                        <img id="preview" src="images/large/4.jpg" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquerypp.custom.js"></script>
+        <script type="text/javascript" src="../js/jquery.elastislide.js"></script>
+        <script type="text/javascript">
+            
+            // example how to integrate with a previewer
+
+            var current = 0,
+                $preview = $( '#preview' ),
+                $carouselEl = $( '#carousel' ),
+                $carouselItems = $carouselEl.children(),
+                carousel = $carouselEl.elastislide( {
+                    current : current,
+                    minItems : 4,
+                    onClick : function( el, pos, evt ) {
+
+                        changeImage( el, pos );
+                        evt.preventDefault();
+
+                    },
+                    onReady : function() {
+
+                        changeImage( $carouselItems.eq( current ), current );
+                        
+                    }
+                } );
+
+            function changeImage( el, pos ) {
+
+                $preview.attr( 'src', el.data( 'preview' ) );
+                $carouselItems.removeClass( 'current-img' );
+                el.addClass( 'current-img' );
+                carousel.setCurrent( pos );
+
+            }
+
+        </script>
+
+
+</body>
+</article>
+<br>
+<footer class="grid_12" align=center>
+2013 © 公務員出國考察追蹤網 || 本來源以 公務出國報告資訊網 頒佈為準，資料僅供參考，<br>若有不正確之處請來信（abroadplay@groups.facebook.com）與我們反應。 
+Page rendered in 0.0068 seconds
+  </footer>
+  
+</section>
+
+</html>

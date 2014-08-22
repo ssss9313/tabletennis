@@ -1,0 +1,23 @@
+.button[disabled], .button[disabled]:hover, .button.disabled, .button.disabled:hover {
+opacity: .5;
+cursor: default;
+color: rgba(0,0,0,0.2) !important;
+text-shadow: none !important;
+background-color: white;
+background-image: none;
+border-top: none;
+
+-webkit-box-shadow: inset rgba(255,254,255,0.4) 0 0.3em .3em, inset rgba(0,0,0,0.1) 0 -0.1em .3em, /* inner shadow */ 
+rgba(0,0,0,0.3) 0 .1em 1px, /* border */
+rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+-moz-box-shadow: inset rgba(255,254,255,0.4) 0 0.3em .3em, inset rgba(0,0,0,0.1) 0 -0.1em .3em, /* inner shadow */ 
+rgba(0,0,0,0.3) 0 .1em 1px, /* border */
+rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+box-shadow: inset rgba(255,254,255,0.4) 0 0.3em .3em, inset rgba(0,0,0,0.1) 0 -0.1em .3em, /* inner shadow */ 
+rgba(0,0,0,0.3) 0 .1em 1px, /* border */
+rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+
+-webkit-transform: translateY(5px);
+-moz-transform: translateY(5px);
+transform: translateY(5px);
+}
