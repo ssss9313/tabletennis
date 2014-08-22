@@ -1,0 +1,293 @@
+<html>
+<head>
+<section class="container_12">
+<title>愉悅桌球</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../css/css.css" rel="stylesheet">
+<link href="../css/960.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/buttons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/disable.css"/>
+
+<style type="text/css">   
+      body { padding: 50px 100px; }
+      #wrapper { text-align: center; }  
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style type="text/css">
+   
+tr{
+  color: white;
+}   
+.abgne_tab ul{
+  margin: 0;
+}
+
+.abgne_tab li{
+  margin: 0;
+}
+  .abgne_tab {
+    padding-top: 2em;
+  }
+
+ .table3{
+  padding-left: 21.5em;
+ }
+
+  ul.tabs {
+    width: 100%;
+    height: 32px;
+    padding-left: 38em;
+
+  }
+  ul.tabs li {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    border: 1px solid #999;
+    border-left: none;
+    position: relative;
+    margin-bottom: -1px;  /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+    background: #e1e1e1;
+  }
+  ul.tabs li a {
+    display: block;
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  ul.tabs li a:hover {
+    background: #ccc;
+  }
+  ul.tabs li.active  {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+ 
+  }
+  ul.tabs li.active a:hover {
+    background: #fff;
+  }
+  div.tab_container {
+    
+    width: 100%;
+    border: 1px solid #999;
+    border-top: none;
+
+  }
+  div.tab_container .tab_content {
+    padding:20px;
+  }
+  
+</style>
+
+<script type="text/javascript">
+  $(function(){
+    // 預設顯示第一個 Tab
+    var _showTab = 0;
+    var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+    $($defaultLi.find('a').attr('href')).siblings().hide();
+    
+    // 當 li 頁籤被點擊時...
+    // 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+    $('ul.tabs li').click(function() {
+      // 找出 li 中的超連結 href(#id)
+      var $this = $(this),
+        _clickTab = $this.find('a').attr('href');
+      // 把目前點擊到的 li 頁籤加上 .active
+      // 並把兄弟元素中有 .active 的都移除 class
+      $this.addClass('active').siblings('.active').removeClass('active');
+      // 淡入相對應的內容並隱藏兄弟元素
+      $(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+      return false;
+    }).find('a').focus(function(){
+      this.blur();
+    });
+  });
+</script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="center_1.html">首頁</a></li>
+                        <li><a href="#">關於愉悅</a></li>
+                        <li><a href="#">會員中心</a></li>
+                        <li><a href="#">訂單查詢</a></li>
+                        <li><a href="#">購物車</a></li>
+                        <li><a href="#">註冊</a></li>
+                        <li><a href="#">登入</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                        <li class="search"><input type="text" name="w" id="what"><input type="submit" value="搜尋"></li>
+                    </ul>
+                </div>
+           
+            </div>
+        </nav>
+</head>
+
+<body>      
+
+<article>
+    <br>
+
+<div id="wrapper">  
+    <button disabled class="button green glossy">Stiga</button>
+    <a href="#" class="button">Butterfly</a>
+    <a href="#" class="button">Nittaku</a>
+    <a href="#" class="button">Xiom</a>
+    <a href="#" class="button">Crack</a>
+    <a href="#" class="button">Andro</a>
+    <a href="#" class="button">Yasaka</a>   
+    <a href="#" class="button">Tibhar</a>
+    <a href="#" class="button">紅雙喜</a>
+    <a href="#" class="button">友誼729</a>
+    <a href="#" class="button">Palio</a>
+    <a href="#" class="button">TSP</a>
+    
+  </div>   
+
+<aside class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <div class="list-group" align="center">
+                        <h2><img src="classify.jpg" width="210" height="35"></h2>
+                        <a href="stiga-blades.html" class="list-group-item active">球板-blades</a>
+                        <a href="stiga-rubbers.html" class="list-group-item">膠皮-robbers</a>
+                        <a href="stiga-textiles" class="list-group-item">服裝-textiles</a>
+                        <a href="stiga-tables" class="list-group-item">桌子-tables</a>
+                        <a href="stiga-balls.html" class="list-group-item">球-balls</a>
+                        <a href="stiga-robots" class="list-group-item">發球機-robots</a>
+                        <a href="stiga-others" class="list-group-item">其它-others</a>
+                    </div>
+</aside>
+
+
+<div class="abgne_tab" >
+    <ul class="tabs">
+      <li><a href="#tab1">刀板</a></li>
+      <li><a href="#tab2">中直</a></li>
+    </ul>
+
+    <div class="tab_container">
+      <div id="tab1" class="tab_content">
+        <div class="table1">
+<table align="center">
+  <tr>
+    <th><a href="stiga-CR.html"><img src="1.jpg" width="150" height="150"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><a href="#"><img src="2.jpg" width="150" height="150"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><a href="#"><img src="3.jpg" width="150" height="150"></a></th>
+  </tr>
+  <tr>
+    <th><a href="stiga-CR.html">STIGA CILPPER CR</a></th><th><a href="#">STIGA Rosewood XO</a></th><th><a href="#">Rosewood NCT V</a></th>
+  </tr>
+  <tr>
+    <th>CR</th><th>玫瑰XO</th><th>玫瑰5</th>
+  </tr>
+  <tr>
+    <th>售價:2200</th><th>售價:4100</th><th>售價:3800</th>
+  </tr>
+</table>
+
+</div>
+        <div class="table2">
+<table align="center">
+  <tr>
+    <th><img src="1.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="2.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="3.jpg" width="150" height="150"></th>
+  </tr>
+  <tr>
+    <th>Rosewood NCT V [玫瑰5]</th><th>456</th><th>789</th>
+  </tr>
+  <tr>
+    <th>abc</th><th>efg</th><th>huj</th>
+  </tr>
+</table>
+</div>
+<div class="table3">
+<table>
+  <tr>
+    <th><img src="1.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="2.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="3.jpg" width="150" height="150"></th>
+  </tr>
+  <tr>
+    <th>123</th><th>456</th><th>789</th>
+  </tr>
+  <tr>
+    <th>abc</th><th>efg</th><th>huj</th>
+  </tr>
+</table>
+</div>
+      </div>
+      <div id="tab2" class="tab_content">
+        <div class="table1">
+<table align="center">
+  <tr>
+    <th><a href="#"><img src="5.jpg" width="150" height="150"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><a href="#"><img src="6.jpg" width="150" height="150"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><a href="#"><img src="7.jpg" width="150" height="150"></a></th>
+  </tr>
+  <tr>
+    <th><a href="#">STIGA INTENSITY NCT</a></th><th><a href="#">STIGA INFINITY VPS V</a></th><th><a href="#">STIGA Ebenholz NCT V</a></th>
+  </tr>
+  <tr>
+    <th>NCT許昕</th><th>VPS(樊振東)</th><th>黑檀5</th>
+  </tr>
+  <tr>
+    <th>售價:3400</th><th>售價:2100</th><th>售價:3800</th>
+  </tr>
+</table>
+
+</div>
+        <div class="table2">
+<table align="center">
+  <tr>
+    <th><img src="5.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="6.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="7.jpg" width="150" height="150"></th>
+  </tr>
+  <tr>
+    <th>Rosewood NCT V [玫瑰5]</th><th>456</th><th>789</th>
+  </tr>
+  <tr>
+    <th>abc</th><th>efg</th><th>huj</th>
+  </tr>
+</table>
+</div>
+<div class="table3">
+<table>
+  <tr>
+    <th><img src="5.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="6.jpg" width="150" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th><img src="7.jpg" width="150" height="150"></th>
+  </tr>
+  <tr>
+    <th>123</th><th>456</th><th>789</th>
+  </tr>
+  <tr>
+    <th>abc</th><th>efg</th><th>huj</th>
+  </tr>
+</table>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</article>
+
+<footer class="grid_12" align=center>
+2013 © 公務員出國考察追蹤網 || 本來源以 公務出國報告資訊網 頒佈為準，資料僅供參考，<br>若有不正確之處請來信（abroadplay@groups.facebook.com）與我們反應。 
+Page rendered in 0.0068 seconds
+</footer>
+  
+</section>
+
+</html>
